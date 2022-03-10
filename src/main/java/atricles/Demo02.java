@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Demo02 {
 
@@ -42,6 +43,13 @@ public class Demo02 {
                 )).get();
 
         System.out.println(allMaxesOfArticlesPerYears);
+
+        System.out.println(Stream.of("a", "b", "c", "d")
+                .collect(
+                        () -> new StringBuilder(),
+                        (a, b) -> a.append(b).append(", "),
+                        (a1, a2) -> a1.append(a2)
+                ));
 
     }
 }

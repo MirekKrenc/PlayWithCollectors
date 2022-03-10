@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Article {
+public class Article implements ArticleManipulation{
     private final int year;
     private final String title;
     private final String articleType;
