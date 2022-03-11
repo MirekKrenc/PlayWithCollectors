@@ -66,7 +66,7 @@ public class Article implements ArticleManipulation{
 
     }
 
-    private Article(int year, String title, String articleType) {
+    Article(int year, String title, String articleType) {
         this.year = year;
         this.title = title;
         this.articleType = articleType;
